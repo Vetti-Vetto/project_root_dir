@@ -1,1 +1,2 @@
-
+import wget
+python version
