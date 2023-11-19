@@ -6,5 +6,9 @@ def read_words(file_name):
         words = re.findall(r'\b\w{3,}\b', data)
         return [word.upper() for word in words]
 
-# example usage
 print(read_words('C:/Users/mount/Downloads/softdev project/project_root_dir/pygen/words/english-common-words.txt'))
+def count_words(file_name):
+    words = read_words(file_name)
+    return len(words)
+
+print(count_words('C:/Users/mount/Downloads/softdev project/project_root_dir/pygen/words/english-common-words.txt'))
