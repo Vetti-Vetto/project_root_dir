@@ -11,4 +11,4 @@ def count_words(file_name):
     words = read_words(file_name)
     return len(words)
 
-print(count_words('C:/Users/mount/Downloads/softdev project/project_root_dir/pygen/words/english-common-words.txt'))
+print("word count:", count_words('C:/Users/mount/Downloads/softdev project/project_root_dir/pygen/words/english-common-words.txt'))
