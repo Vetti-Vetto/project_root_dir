@@ -1,5 +1,4 @@
 import re
-
 def read_words(file_name):
     with open(file_name, 'r') as file:
         data = file.read()
@@ -13,7 +12,6 @@ def count_words(file_name):
 
 print("word count:", count_words('C:/Users/mount/Downloads/softdev project/project_root_dir/pygen/words/english-common-words.txt'))
 
-#Proteins
 def read_sequences(filename):
     with open(filename, 'r') as file:
         sequences = {}
@@ -31,7 +29,7 @@ def read_sequences(filename):
     return sequences
 
 def main():
-    sequences = read_sequences('human-proteome.fasta')
+    sequences = read_sequences('C:/Users/mount/Downloads/softdev project/project_root_dir/human-proteome.fasta')
     print('Number of sequences read:', len(sequences))
     print('Sequence associated with the protein O95139:', sequences['O95139'])
 

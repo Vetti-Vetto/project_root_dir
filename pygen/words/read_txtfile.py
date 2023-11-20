@@ -1,3 +1,4 @@
+#this is to read the english-common-words.txt file, will be deleted in the final version of the project
 from io import open
 def read_file (file_name):
     with open(file_name, 'r') as file:
